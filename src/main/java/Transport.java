@@ -3,7 +3,7 @@ public class Transport {
     protected double speed;
     protected double priceKM;
 
-    public Transport() {
+    public Transport(String name, double speed, double priceKM) {
         this.name = name;
         this.speed = speed;
         this.priceKM = priceKM;
