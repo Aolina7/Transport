@@ -3,20 +3,17 @@ public class Route {
     public String arrivalTown;
     public String departureTime;
     public String arrivalTime;
-    public double timeInTrip;
     public double distance;
     public Transport transport;
-    public double price;
 
     public Route(String departureTown, String arrivalTown, String departureTime, String arrivalTime,
-                 double timeInTrip, double distance, String nameTransport, double price) {
+                 double distance, Transport transport) {
         this.departureTown = departureTown;
         this.arrivalTown = arrivalTown;
         this.departureTime = departureTime;
         this.arrivalTime = arrivalTime;
-        this.timeInTrip = transport.timeTrip(distance);
         this.distance = distance;
-        this.price = transport.ticketPrice(distance);
+        this.transport = transport;
     }
 
     public String getDepartureTown() {
@@ -35,10 +32,6 @@ public class Route {
         return arrivalTime;
     }
 
-    public double getTimeInTrip() {
-        return timeInTrip;
-    }
-
     public double getDistance() {
         return distance;
     }
@@ -47,7 +40,4 @@ public class Route {
         return transport;
     }
 
-    public double getPrice() {
-        return price;
-    }
 }
