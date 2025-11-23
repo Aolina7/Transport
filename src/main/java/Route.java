@@ -1,14 +1,14 @@
 public class Route {
     public String departureTown;
     public String arrivalTown;
-    public double departureTime;
-    public double arrivalTime;
+    public String departureTime;
+    public String arrivalTime;
     public double timeInTrip;
     public double distance;
     public Transport transport;
     public double price;
 
-    public Route(String departureTown, String arrivalTown, double departureTime, double arrivalTime,
+    public Route(String departureTown, String arrivalTown, String departureTime, String arrivalTime,
                  double timeInTrip, double distance, String nameTransport, double price) {
         this.departureTown = departureTown;
         this.arrivalTown = arrivalTown;
@@ -27,11 +27,11 @@ public class Route {
         return arrivalTown;
     }
 
-    public double getDepartureTime() {
+    public String getDepartureTime() {
         return departureTime;
     }
 
-    public double getArrivalTime() {
+    public String getArrivalTime() {
         return arrivalTime;
     }
 
