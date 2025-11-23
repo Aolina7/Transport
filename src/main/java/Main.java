@@ -9,7 +9,7 @@ public class Main {
         Scanner scanner2 = new Scanner(System.in);
         String arrivalTown = scanner2.nextLine();
 
-        for (int i = 0; i < Routes.length)
+        for (int i = 0; i < Routes.length())
 
     }
 }
