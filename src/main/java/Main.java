@@ -6,10 +6,19 @@ public class Main {
         Scanner scanner1 = new Scanner(System.in);
         String departureTown = scanner1.nextLine();
 
+        System.out.println("Введите пункт назначения: ");
         Scanner scanner2 = new Scanner(System.in);
         String arrivalTown = scanner2.nextLine();
 
-        for (int i = 0; i < Routes.length())
-
+        Route[] RoutesData = Route.getRoutesData();
+        for (int i = 0; i < RoutesData.length; i++) {
+            if ((RoutesData[i].getDepartureTown().equals(departureTown)) && (RoutesData[i].getArrivalTown().equals(arrivalTown))) {
+                System.out.println(RoutesData[i]);
+            } else {
+                System.out.println("Нет подходящего варианта.");
+                break;
+            }
+        }
     }
 }
+
