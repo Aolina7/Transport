@@ -1,5 +1,7 @@
 public class RoutesData {
-    public Route[] Routes() {
+    public Route[] RoutesData;
+
+    public Route[] RoutesData() {
         return new Route[] {
                 new Route("Казань", "Москва", "10:00", "11:00", 800, new Plane()),
                 new Route("Казань", "Москва", "12:00", "21:00", 800, new Car()),
