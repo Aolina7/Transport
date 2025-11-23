@@ -19,4 +19,35 @@ public class Route {
         this.price = transport.ticketPrice(distance);
     }
 
+    public String getDepartureTown() {
+        return departureTown;
+    }
+
+    public String getArrivalTown() {
+        return arrivalTown;
+    }
+
+    public double getDepartureTime() {
+        return departureTime;
+    }
+
+    public double getArrivalTime() {
+        return arrivalTime;
+    }
+
+    public double getTimeInTrip() {
+        return timeInTrip;
+    }
+
+    public double getDistance() {
+        return distance;
+    }
+
+    public Transport getTransport() {
+        return transport;
+    }
+
+    public double getPrice() {
+        return price;
+    }
 }
