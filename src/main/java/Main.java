@@ -14,9 +14,6 @@ public class Main {
         for (int i = 0; i < RoutesData.length; i++) {
             if ((RoutesData[i].getDepartureTown().equals(departureTown)) && (RoutesData[i].getArrivalTown().equals(arrivalTown))) {
                 System.out.println(RoutesData[i]);
-            } else {
-                System.out.println("Нет подходящего варианта.");
-                break;
             }
         }
     }
